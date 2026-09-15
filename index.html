@@ -1,2 +1,36 @@
-<!doctype html>
-<script>location.replace("https://viral.reelsvideos.top/viral11vip/?utm_source=Saim&utm_medium=SIAM")</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+</head>
+<body>
+
+<script>
+(function () {
+
+    const links = [
+        "https://example1.com",
+        "https://example2.com",
+        "https://example3.com",
+        "https://example4.com"
+    ];
+
+    const key = "redirect_index";
+    let index = parseInt(localStorage.getItem(key) || "0", 10);
+
+    if (index < links.length) {
+        localStorage.setItem(key, index + 1);
+        window.location.replace(links[index]);
+    } else {
+        // ৪টি শেষ হলে আবার Link 1 থেকে শুরু
+        localStorage.setItem(key, "0");
+        window.location.replace(links[0]);
+    }
+
+})();
+</script>
+
+</body>
+</html>
